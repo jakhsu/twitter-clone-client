@@ -19,8 +19,8 @@ function App() {
   if (blockRenderPaths.includes(location.pathname)) return null;
 
   return (
-    <header className="flex items-end justify-end h-screen grow w-[15%] !min-w-[15%] md:w-[46%] z-50">
-      <div className="flex flex-col items-start justify-start gap-1 fixed h-screen md:pr-8">
+    <header className="flex items-end justify-end h-screen grow w-[15%] !min-w-[15%] xl:w-[46%] z-50">
+      <div className="flex flex-col items-start justify-start gap-1 fixed h-screen xl:pr-8">
         <img src={logo} width="30" className="mt-3 ml-4 mb-4" alt="" />
         <NavLink to="/home" className="nav-link">
           <img src={HomeLogo} width="30" alt="" />
@@ -56,7 +56,7 @@ function App() {
         </NavLink>
         <a
           href="#"
-          className="bg-[#1d9bf0] hover:bg-[#1A8CD8] transition-all w-60 h-12 hidden md:flex items-center justify-center rounded-3xl mt-3"
+          className="bg-[#1d9bf0] hover:bg-[#1A8CD8] transition-all w-60 h-12 hidden xl:flex items-center justify-center rounded-3xl mt-3"
         >
           <span className="font-bold text-lg">Tweet</span>
         </a>
@@ -67,14 +67,14 @@ function App() {
             className="rounded-full"
             alt=""
           />
-          <div className="hidden md:flex flex-col items-start justify-start">
+          <div className="hidden xl:flex flex-col items-start justify-start">
             <span className="font-bold"> {user?.name} </span>
             <span className="text-sm text-gray-500"> @{user?.username} </span>
           </div>
           <img
             src={More}
             width="20"
-            className="right-2 absolute hidden md:block"
+            className="right-2 absolute hidden xl:block"
             alt=""
           />
         </div>

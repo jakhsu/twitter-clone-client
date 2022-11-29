@@ -50,9 +50,6 @@ function App() {
     <div className="w-full h-screen flex items-center justify-center">
       <div className="w-[300px] flex flex-col items-center justify-center gap-6">
         <span className="text-3xl font-bold">Create my account</span>
-        <button onClick={testFunc}>
-          <span>call test</span>
-        </button>
         <input
           type="text"
           onInput={(e) => setName(e.target.value)}
@@ -86,7 +83,7 @@ function App() {
         <div className="flex w-full gap-3 items-center justify-start">
           <div className="flex flex-col items-start justify-center !w-32 min-w-[7rem] h-14 bg-black px-1 relative border-2 border-gray-600 border-opacity-50 rounded transition-all focus-within:border-[#1d9bf0] group">
             <span className="text-[#71767B] text-sm px-2 group-focus-within:text-[#1d9bf0] ">
-              Ay
+              Month
             </span>
             <select className="bg-transparent outline-none appearance-none text-xl w-full h-full cursor-pointer pl-1 z-10">
               <option className="bg-black w-full"></option>
@@ -197,7 +194,7 @@ function App() {
           {loading ? (
             <div className="w-5 h-5 border-2 border-gray-600 animate-spin rounded-full border-t-[#1d9bf0]"></div>
           ) : (
-            <span>Forward</span>
+            <span>Next</span>
           )}
         </button>
       </div>

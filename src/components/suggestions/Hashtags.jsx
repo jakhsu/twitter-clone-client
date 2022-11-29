@@ -3,13 +3,13 @@ import More from "../../assets/more.svg";
 
 function App() {
   const [tags, setTags] = useState([
-    "#yazılımcılarkapatılsın",
-    "Bızırt",
-    "Felfena Olay",
+    "#Elon Musk",
+    "#Taylor Swift",
+    "#Django",
     "#Lorem",
     "#Ipsum",
-    "#yazılımcılaraçılsın",
-    "YAZILIMCI MAAŞLARI",
+    "#Rust",
+    "#Algebraic Effect",
   ]);
 
   return (
@@ -41,7 +41,7 @@ function App() {
       })}
 
       <div className="flex items-start flex-col px-4 py-3 mt-2 w-full cursor-pointer transition-all hover:bg-[#1D1F23] rounded-b-2xl">
-        <span className="text-[#1d9bf0] ">Daha fazla göster</span>
+        <span className="text-[#1d9bf0] ">Show more</span>
       </div>
     </div>
   );

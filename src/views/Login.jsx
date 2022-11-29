@@ -44,9 +44,7 @@ function App() {
       navigate("/home");
     };
 
-    loginUser(sendToData, response, setLoading).then((res) => {
-      console.log("response from login action is: ", res);
-    });
+    loginUser(sendToData, response, setLoading).then((res) => {});
   };
 
   return (
@@ -115,7 +113,7 @@ function App() {
             onClick={() => (username ? setNext(true) : false)}
             className="w-full h-10 flex items-center justify-center gap-4 bg-white text-black rounded-3xl transition-all hover:bg-[#E6E6E6] "
           >
-            <span>forward</span>
+            <span>Next</span>
           </button>
           <button className="w-full h-10 flex items-center justify-center gap-4 bg-black text-white border-2 transition-all hover:bg-[#181919] border-gray-600 border-opacity-50 rounded-3xl">
             <span>forget password?</span>

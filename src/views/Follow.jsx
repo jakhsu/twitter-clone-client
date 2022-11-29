@@ -86,7 +86,7 @@ function App() {
                         params.type == "followers" ? activeClasses : ""
                       } flex items-center justify-center`}
                     >
-                      Followerler
+                      Follower
                     </span>
                   </div>
                   <div
@@ -98,7 +98,7 @@ function App() {
                         params.type == "following" ? activeClasses : ""
                       } flex items-center justify-center`}
                     >
-                      Takip ediliyor
+                      Following
                     </span>
                   </div>
                 </div>

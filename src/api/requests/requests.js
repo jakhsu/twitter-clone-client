@@ -9,7 +9,6 @@ loadingCB (Loading Callback) => Handles a loading state if the calling party has
 // Login with username and password
 export const loginUser = (data, responseCB, loadingCB) => {
   if (loadingCB) loadingCB(true);
-  console.log("starting to login");
   return axios
     .post(url.LOGIN_USER, data)
     .then((response) => {
@@ -26,17 +25,14 @@ export const loginUser = (data, responseCB, loadingCB) => {
 // Register a user
 export const registerUser = (data, responseCB, loadingCB) => {
   if (loadingCB) loadingCB(true);
-  console.log("ready to send axios request to register a user");
   return axios
     .post(url.REGISTER_USER, data)
     .then((response) => {
       if (loadingCB) loadingCB(false);
       if (responseCB) responseCB(response.data);
-      console.log("success! response is: ", response.data);
       return response.data;
     })
     .catch((err) => {
-      console.log("error!");
       if (loadingCB) loadingCB(true);
       return null;
     });
