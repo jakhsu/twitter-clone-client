@@ -35,7 +35,7 @@ function App({ setEditMode }) {
   const sendPhoto = () => {
     if (loading) return;
     if (description.length < 3 || name.length < 3)
-      return alert("Boş bırakamazsın.");
+      return alert("Name or description too short");
     setLoading(true);
 
     if (banner || photo) {
@@ -101,7 +101,7 @@ function App({ setEditMode }) {
             {loading ? (
               <div className="w-4 h-4 border-2 border-gray-600 border-t-[#1d9bf0] animate-spin rounded-full "></div>
             ) : (
-              <span>Kaydet</span>
+              <span>Save</span>
             )}
           </button>
         </div>
